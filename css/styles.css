@@ -118,7 +118,7 @@ body {
   margin-right: 8px;
 }
 
-.app-main {  
+.app {  
   height: 900px;
   background-color: #ffffff;
 }
@@ -191,6 +191,30 @@ body {
   margin-right: 15px;
 }
 
+.app-main {
+  flex: 1;
+  height: 900px;
+  /*border: 1px solid blue;*/
+}
+
+.top-panel {
+  flex: 1;
+  height: 70px;
+  background-color: #eef1f7;
+}
+
+.filter {
+  flex: 1;
+  height: 49px;
+  background-color: #eef1f7;
+  border-top: 1px solid #dadfea;
+  border-bottom: 1px solid #dadfea;
+}
+
+.content {
+  overflow-y: scroll;
+}
+
 .app-footer {
   height: 45px;
   background-color: #181e2c;
@@ -236,7 +260,7 @@ body {
       width: 1320px;
     }
 
-    .app-main {
+    .app {
       width: 1320px;
     }
 
