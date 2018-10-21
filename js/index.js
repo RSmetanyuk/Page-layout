@@ -35,10 +35,10 @@ const makeBooksHtmlContent = () => {
     for (let i = 0 ; i < booksArr.length; i++) {
         content += 
             '<div class=book>' +
-                '<img class="book__logo" src="img/books/' + booksArr[i].bookCover + '">' +
-                '<p class="book__title">' + booksArr[i].bookTitle + '</p>' +
-                '<p class="book__author">by <span class="book__author-name">' + booksArr[i].bookAuthor + '</span></p>' +
-                '<div class="book__rating">' + make_5_star_rating_from_0_to_10(booksArr[i].bookRating) + '</div>' +
+                '<a href="#"><img class="book__logo" src="img/books/' + booksArr[i].bookCover + '"></a>' +
+                '<a href="#"><p class="book__title">' + booksArr[i].bookTitle + '</p></a>' +
+                '<p class="book__author">by <a href="#"><span class="book__author-name">' + booksArr[i].bookAuthor + '</span></a></p>' +
+                '<div class="book__rating"><a href="#">' + make_5_star_rating_from_0_to_10(booksArr[i].bookRating) + '</a></div>' +
             '</div>'
     }
     document.getElementsByClassName("content-window")[0].innerHTML = content;
