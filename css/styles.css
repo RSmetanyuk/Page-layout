@@ -2,25 +2,55 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid blue; */
+  /*border: 1px solid blue;*/
 }
 
 /* для уникнення горизонтальноъ прокрутки */
-/*
+
 .row {  
   margin-left: 0px;
   margin-right: 0px;
 }
-*/
+
+
+.in-centered {display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.in-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.active {
+  background-color: #15a4fa;
+}
+
+a {
+  text-decoration: none;
+  color: #78829d; 
+}
+
+.active a {
+  color: #ffffff; 
+}
+
+ul { 
+  list-style: none; 
+}
 
 body {
-  font-family: ProximaNova;
+  font-family: Proxima Nova;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
   text-align: left;
   color: #78829d;
+  font-size: 13px;
 }
 
 .Book-Store { 
@@ -32,50 +62,60 @@ body {
 }
 
 .app-header {
-  border-radius: 6px 6px 0px 0px;
-  
+  border-radius: 6px 6px 0px 0px;  
   height: 45px;
   background-color: #2f364a;
-  color: #78829d;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;  
+  color: #78829d; 
 }
 
-.app-header-circles {
+.app-header-circles-container {
   height: 45px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .app-header-name {
   flex: 1;
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.app-header-name a {
+  margin-left: 6px;
 }
 
 .Help-Center-Our-Support {
-  width: 169px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 191px;
+  height: 11px;
+}
+
+.small-circle {
+  width: 4px;
+  height: 4px;
+  background-color: #19202e;
+  margin: 8px;
 }
 
 .user-online {
   width: 158px;
   height: 45px;
-  color: #ffffff;
   background-color: #15a4fa;
   border-radius: 0px 6px 0px 0px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+#avatar {
+  border-radius: 16px;
+}
+
+.user-online a {
+  color: #ffffff;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .app-main {  
@@ -87,6 +127,68 @@ body {
   width: 200px;
   height: 900px;
   background-color: #1f2637;
+}
+
+.add-btn-container {
+  width: 200px;
+  height: 120px;
+}
+
+.add-btn {
+  width: 160px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #f2795a;
+  margin-bottom: 6px;
+  border: none;
+}
+
+.add-btn img {
+  margin-right: 19px;
+}
+
+.Add-a-Book {
+  width: 86px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.divider {
+  width: 200px;
+  height: 6px;
+  background-color: #181e2c;
+  border-top: 1px solid #141824;
+  border-bottom: 1px solid #78829d2c;
+}
+
+.left-menue li {
+  height: 38px;
+}
+
+.left-menue li img {
+  margin-right: 12px;
+}
+
+.left-menue li:last-of-type {
+  margin-bottom: 10px;
+}
+
+.categories {
+  height: 181px;
+  margin-top: 29px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.categories li .circle {
+  margin-right: 15px;
 }
 
 .app-footer {
@@ -119,8 +221,8 @@ body {
 }
    
   @media screen and (min-width: 840px) {
-    .app-header-circles {
-      width: 327px;
+    .app-header-circles-container {
+      width: 349px;
     }
   }
     
