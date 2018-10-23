@@ -3,20 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*
-div {
-  border: 1px solid red;
-}
-
-ul {
-  border: 1px solid green;
-}
-
-li {
-  border: 1px solid purple;
-}
-
-/* для уникнення горизонтальноъ прокрутки */
 
 .row {  
   margin-left: 0px;
@@ -52,7 +38,6 @@ li {
 
 .active2 {
   background-color: #97b3ce;
-  text-decoration-color: white !important;
   border-radius: 9.5px;
 }
 
@@ -220,6 +205,18 @@ body {
   margin-right: 15px;
 }
 
+.event_description {
+  margin-left: 11px;
+  margin-top: 37px;
+  font-size: 12px;
+}
+
+.event_date {
+  margin-left: 11px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+
 .app-main {
   flex: 1;
   height: 900px;
@@ -278,7 +275,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  /*overflow: scroll;*/
+  
 }
 
 .book {
