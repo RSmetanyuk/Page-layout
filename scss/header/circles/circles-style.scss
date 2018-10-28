@@ -1,0 +1,26 @@
+.circles-container {
+    @include justify-align(flex-start, flex-start);
+    padding-left: 18px;
+    padding-right: 8px;
+    margin-top: $app-header--vertical-center-move-down;
+  
+    .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      margin-left: 2px;
+      margin-right: 2px;
+  
+      &--red {
+        background-color: #e76847;
+      }
+  
+      &--yellow {
+        background-color: #fabf00;
+      }
+  
+      &--green {
+        background-color: #52bea6;
+      }
+    }
+  }

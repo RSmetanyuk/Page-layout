@@ -1,11 +1,22 @@
+div {
+  border: 1px solid red; }
+
+ul {
+  border: 1px solid green; }
+
+li {
+  border: 1px solid purple; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-.row {
-  margin-left: 0px;
-  margin-right: 0px; }
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
 
 .in-centered {
   display: flex;
@@ -15,15 +26,14 @@
 .in-left {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px; }
+  align-items: center; }
 
 .in-right {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
 
-.flex {
+.flex-1 {
   flex: 1; }
 
 .active {
@@ -34,14 +44,10 @@
   border-radius: 9.5px; }
 
 a {
-  text-decoration: none;
   color: 78829d; }
 
 .active a, .active2 a {
   color: #ffffff; }
-
-ul {
-  list-style: none; }
 
 body {
   font-family: Proxima Nova;
@@ -59,24 +65,35 @@ body {
   margin: auto;
   padding: 10px 20px; }
 
-.app__header {
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 6px 6px 0px 0px;
   height: 45px;
-  background-color: #2f364a;
-  color: #78829d; }
+  background-color: #2f364a; }
 
-.app__header-circles-container {
-  height: 45px; }
-
-.circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  margin-left: 2px;
-  margin-right: 2px; }
+.circles-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 18px;
+  padding-right: 8px;
+  margin-top: 3px; }
+  .circles-container .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px; }
+    .circles-container .circle--red {
+      background-color: #e76847; }
+    .circles-container .circle--yellow {
+      background-color: #fabf00; }
+    .circles-container .circle--green {
+      background-color: #52bea6; }
 
 .app__header-name {
-  flex: 1;
   height: 45px; }
 
 .app__header-name a {
@@ -106,6 +123,11 @@ body {
   margin-left: 8px;
   margin-right: 8px; }
 
+/*
+  <a href="#"><div class="app-header__circle" style="background-color: #e76847"></div></a>
+  <a href="#"><div class="app-header__circle" style="background-color: #fabf00"></div></a>
+  <a href="#"><div class="app-header__circle" style="background-color: #52bea6"></div></a>
+*/
 .app {
   height: 900px;
   background-color: #ffffff; }

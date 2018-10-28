@@ -1,0 +1,54 @@
+$app-header--vertical-center-move-down: 3px;
+
+.app-header {
+    @include justify-align(center);
+    border-radius: 6px 6px 0px 0px;  
+    height: 45px;
+    background-color: #2f364a;  
+  }
+
+
+@import 'scss/header/circles/circles-style';
+  
+  .app__header-name {
+    height: 45px;
+  }
+  
+  .app__header-name a {
+    margin-left: 6px;
+  }
+  
+  .Help-Center-Our-Support {
+    width: 191px;
+    height: 11px;
+  }
+  
+  .small-circle {
+    width: 4px;
+    height: 4px;
+    background-color: #19202e;
+    margin: 8px;
+  }
+  
+  .user-online {
+    width: 158px;
+    height: 45px;
+    background-color: #15a4fa;
+    border-radius: 0px 6px 0px 0px;
+  }
+  
+  #avatar {
+    border-radius: 16px;
+  }
+  
+  .user-online a {
+    color: #ffffff;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  /*
+  <a href="#"><div class="app-header__circle" style="background-color: #e76847"></div></a>
+  <a href="#"><div class="app-header__circle" style="background-color: #fabf00"></div></a>
+  <a href="#"><div class="app-header__circle" style="background-color: #52bea6"></div></a>
+*/

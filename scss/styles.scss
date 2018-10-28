@@ -1,13 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import 'scss/show-borders';
+@import 'scss/reset';
 
-
-.row {  
-  margin-left: 0px;
-  margin-right: 0px;
+@mixin justify-align($justify-content, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 .in-centered {
@@ -20,7 +17,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
+  //padding-left: 20px;
 }
 
 .in-right {
@@ -29,7 +26,7 @@
   align-items: center;
 }
 
-.flex {
+.flex-1 {
   flex: 1;
 }
 
@@ -43,16 +40,11 @@
 }
 
 a {
-  text-decoration: none;
   color: 78829d;
 }
 
 .active a, .active2 a {
   color: #ffffff; 
-}
-
-ul { 
-  list-style: none; 
 }
 
 body {
@@ -74,62 +66,7 @@ body {
 
 }
 
-.app__header {
-  border-radius: 6px 6px 0px 0px;  
-  height: 45px;
-  background-color: #2f364a;
-  color: #78829d; 
-}
-
-.app__header-circles-container {
-  height: 45px;
-}
-
-.circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.app__header-name {
-  flex: 1;
-  height: 45px;
-}
-
-.app__header-name a {
-  margin-left: 6px;
-}
-
-.Help-Center-Our-Support {
-  width: 191px;
-  height: 11px;
-}
-
-.small-circle {
-  width: 4px;
-  height: 4px;
-  background-color: #19202e;
-  margin: 8px;
-}
-
-.user-online {
-  width: 158px;
-  height: 45px;
-  background-color: #15a4fa;
-  border-radius: 0px 6px 0px 0px;
-}
-
-#avatar {
-  border-radius: 16px;
-}
-
-.user-online a {
-  color: #ffffff;
-  margin-left: 8px;
-  margin-right: 8px;
-}
+@import 'scss/header/app-header';
 
 .app {  
   height: 900px;
