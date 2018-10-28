@@ -1,11 +1,14 @@
 .content-window {
-  padding: 10px 1px 1px 10px;
+  padding: 14px 1px 1px 14px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
+  height: calc(100% - 120px);
   flex-wrap: wrap;
+  overflow-y: auto;
+  outline: none;
 
   .book {
-    margin: 15px 10px;
+    margin: 15px 6px;
 
     &__logo {
       border-radius: 5px;
