@@ -1,4 +1,4 @@
-@import 'scss/show-borders';
+//@import 'scss/show-borders';
 @import 'scss/reset';
 
 @mixin justify-align($justify-content, $align-items: center) {
@@ -66,7 +66,7 @@ body {
 
 }
 
-@import 'scss/header/app-header';
+@import 'scss/app-header';
 
 .app {  
   height: 900px;
