@@ -7,7 +7,184 @@ ul {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: 78829d; }
+
+.Book-Store {
+  height: 1053px;
+  width: fit-content;
+  margin: auto;
+  font-family: Proxima Nova;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #78829d;
+  background-color: #ffffff;
+  padding: 11px 33px 52px 36px; }
+
+.app {
+  flex: 1;
+  height: 900px; }
+  @media screen and (min-width: 1389px) {
+    .app {
+      width: 1320px; } }
+  .app .app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 6px 0px 0px;
+    height: 45px;
+    background-color: #2f364a; }
+    .app .app-header .circles-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 345px;
+      padding-left: 18px;
+      padding-right: 8px;
+      margin-top: 3px; }
+      .app .app-header .circles-container .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        margin-left: 2px;
+        margin-right: 2px; }
+        .app .app-header .circles-container .circle--red {
+          background-color: #e76847; }
+        .app .app-header .circles-container .circle--yellow {
+          background-color: #fabf00; }
+        .app .app-header .circles-container .circle--green {
+          background-color: #52bea6; }
+    .app .app-header .center-name-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3px;
+      flex: 1; }
+      .app .app-header .center-name-container__name-logo {
+        margin-left: 10px; }
+      .app .app-header .center-name-container__name {
+        margin-left: 7px;
+        margin-right: 10px; }
+    .app .app-header .Help-Center-Our-Support {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3px;
+      width: 191px;
+      height: 11px; }
+      .app .app-header .Help-Center-Our-Support__small-circle {
+        width: 4px;
+        height: 4px;
+        background-color: #19202e;
+        margin: 8px; }
+    .app .app-header .user-online {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 158px;
+      height: 45px;
+      background-color: #15a4fa;
+      border-radius: 0px 6px 0px 0px; }
+      .app .app-header .user-online__avatar {
+        border-radius: 16px; }
+      .app .app-header .user-online__name {
+        color: #ffffff;
+        margin-left: 8px;
+        margin-right: 8px; }
+  .app .app-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .app .app-body .sidebar {
+      width: 200px;
+      height: 900px;
+      background-color: #1f2637; }
+      .app .app-body .sidebar .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 120px; }
+        .app .app-body .sidebar .btn-container .add-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 160px;
+          height: 44px;
+          border-radius: 4px;
+          border: none;
+          background-color: #f2795a;
+          margin-bottom: 6px; }
+          .app .app-body .sidebar .btn-container .add-btn__img {
+            margin-right: 19px; }
+          .app .app-body .sidebar .btn-container .add-btn__name {
+            width: 86px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff; }
+      .app .app-body .sidebar .divider {
+        width: 200px;
+        height: 6px;
+        background-color: #181e2c;
+        border-top: 1px solid #141824;
+        border-bottom: 1px solid #78829d2c; }
+      .app .app-body .sidebar .menue__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 38px;
+        padding-left: 21px; }
+        .app .app-body .sidebar .menue__item:last-of-type {
+          margin-bottom: 10px; }
+        .app .app-body .sidebar .menue__item--active {
+          background-color: #15a4fa; }
+          .app .app-body .sidebar .menue__item--active a {
+            color: #ffffff; }
+        .app .app-body .sidebar .menue__item-name {
+          margin-left: 12px; }
+      .app .app-body .sidebar .categories {
+        height: 181px;
+        margin-top: 29px;
+        margin-bottom: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .app .app-body .sidebar .categories__item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-left: 20px; }
+          .app .app-body .sidebar .categories__item .circle-1, .app .app-body .sidebar .categories__item .circle-2, .app .app-body .sidebar .categories__item .circle-3, .app .app-body .sidebar .categories__item .circle-4 {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 15px; }
+          .app .app-body .sidebar .categories__item .circle-1 {
+            background-color: #e64c66; }
+          .app .app-body .sidebar .categories__item .circle-2 {
+            background-color: #ffab00; }
+          .app .app-body .sidebar .categories__item .circle-3 {
+            background-color: #00bfdd; }
+          .app .app-body .sidebar .categories__item .circle-4 {
+            background-color: #7874cf; }
+      .app .app-body .sidebar .event {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .app .app-body .sidebar .event_logo {
+          margin-left: 21px; }
+        .app .app-body .sidebar .event_description {
+          margin-left: 11px;
+          margin-top: 37px;
+          font-size: 12px; }
+        .app .app-body .sidebar .event_time-ago {
+          margin-left: 11px;
+          margin-top: 18px;
+          font-size: 12px; }
 
 .in-centered {
   display: flex;
@@ -27,168 +204,9 @@ a {
 .flex-1 {
   flex: 1; }
 
-.active {
-  background-color: #15a4fa; }
-
 .active2 {
   background-color: #97b3ce;
   border-radius: 9.5px; }
-
-a {
-  color: 78829d; }
-
-.active a, .active2 a {
-  color: #ffffff; }
-
-body {
-  font-family: Proxima Nova;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #78829d;
-  font-size: 13px; }
-
-.Book-Store {
-  height: 1053px;
-  background-color: #ffffff;
-  margin: auto;
-  padding: 10px 20px; }
-
-.app-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px 6px 0px 0px;
-  height: 45px;
-  background-color: #2f364a; }
-
-.circles-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 18px;
-  padding-right: 8px;
-  margin-top: 3px; }
-  .circles-container .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    margin-left: 2px;
-    margin-right: 2px; }
-    .circles-container .circle--red {
-      background-color: #e76847; }
-    .circles-container .circle--yellow {
-      background-color: #fabf00; }
-    .circles-container .circle--green {
-      background-color: #52bea6; }
-
-.app__header-name {
-  height: 45px; }
-
-.app__header-name a {
-  margin-left: 6px; }
-
-.Help-Center-Our-Support {
-  width: 191px;
-  height: 11px; }
-
-.small-circle {
-  width: 4px;
-  height: 4px;
-  background-color: #19202e;
-  margin: 8px; }
-
-.user-online {
-  width: 158px;
-  height: 45px;
-  background-color: #15a4fa;
-  border-radius: 0px 6px 0px 0px; }
-
-#avatar {
-  border-radius: 16px; }
-
-.user-online a {
-  color: #ffffff;
-  margin-left: 8px;
-  margin-right: 8px; }
-
-/*
-  <a href="#"><div class="app-header__circle" style="background-color: #e76847"></div></a>
-  <a href="#"><div class="app-header__circle" style="background-color: #fabf00"></div></a>
-  <a href="#"><div class="app-header__circle" style="background-color: #52bea6"></div></a>
-*/
-.app {
-  height: 900px;
-  background-color: #ffffff; }
-
-.sidebar {
-  width: 200px;
-  height: 900px;
-  background-color: #1f2637; }
-
-.add-btn-container {
-  width: 200px;
-  height: 120px; }
-
-.add-btn {
-  width: 160px;
-  height: 44px;
-  border-radius: 4px;
-  background-color: #f2795a;
-  margin-bottom: 6px;
-  border: none; }
-
-.add-btn img {
-  margin-right: 19px; }
-
-.Add-a-Book {
-  width: 86px;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff; }
-
-.divider {
-  width: 200px;
-  height: 6px;
-  background-color: #181e2c;
-  border-top: 1px solid #141824;
-  border-bottom: 1px solid #78829d2c; }
-
-.left-menue li {
-  height: 38px; }
-
-.left-menue li img {
-  margin-right: 12px; }
-
-.left-menue li:last-of-type {
-  margin-bottom: 10px; }
-
-.categories {
-  height: 181px;
-  margin-top: 29px;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.categories li .circle {
-  margin-right: 15px; }
-
-.event_description {
-  margin-left: 11px;
-  margin-top: 37px;
-  font-size: 12px; }
-
-.event_date {
-  margin-left: 11px;
-  margin-top: 18px;
-  font-size: 12px; }
 
 .app-main {
   flex: 1;
@@ -285,20 +303,35 @@ body {
   justify-content: center;
   align-items: center; }
 
-@media screen and (min-width: 840px) {
-  .app__header-circles-container {
-    width: 349px; } }
+/* 
+  @media screen and (min-width: 840px) {
+    .app__header-circles-container {
+      width: 349px;
+    }
+  }
+  
+  @media screen and (min-width: 840px) {
+    .app__header-circles-container {
+      width: 349px;
+    }
+  }
 
-@media screen and (min-width: 840px) {
-  .app__header-circles-container {
-    width: 349px; } }
+  @media screen and (min-width: 1389px) {
+    .Book-Store {
+      width: 1360px;
+    }
 
-@media screen and (min-width: 1389px) {
-  .Book-Store {
-    width: 1360px; }
-  .app__header {
-    width: 1320px; }
-  .app {
-    width: 1320px; }
-  .app-footer {
-    width: 1320px; } }
+    .app__header {
+      width: 1320px;
+    }
+
+    .app {
+      width: 1320px;
+    }
+
+    .app-footer {
+      width: 1320px;
+    }
+     
+  }
+  */

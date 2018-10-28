@@ -1,0 +1,126 @@
+.sidebar {
+  width: 200px;
+  height: 900px;
+  background-color: #1f2637;
+
+  .btn-container {
+    @include justify-align(center);
+    width: 200px;
+    height: 120px;
+  
+    .add-btn {
+      @include justify-align(center);
+      width: 160px;
+      height: 44px;
+      border-radius: 4px;
+      border: none;
+      background-color: #f2795a;
+      margin-bottom: 6px;
+            
+      &__img {
+        margin-right: 19px;
+      }
+  
+      &__name {
+        width: 86px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+      }
+    }         
+  }
+
+  .divider {
+    width: 200px;
+    height: 6px;
+    background-color: #181e2c;
+    border-top: 1px solid #141824;
+    border-bottom: 1px solid #78829d2c;
+  }
+
+  .menue {
+    &__item {
+      @include justify-align(flex-start);
+      height: 38px;
+      padding-left: 21px;
+
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+      
+      &--active {
+        background-color: #15a4fa;
+        
+        a {
+          color: #ffffff;
+        }        
+      }
+      
+      &-name {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .categories {
+    height: 181px;
+    margin-top: 29px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    &__item {
+      @include justify-align(flex-start);
+      margin-left: 20px;
+
+      %circle {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .circle-1 {
+        @extend %circle;
+        background-color: #e64c66;
+      }
+
+      .circle-2 {
+        @extend %circle;
+        background-color: #ffab00;
+      }
+
+      .circle-3 {
+        @extend %circle;
+        background-color: #00bfdd;
+      }
+
+      .circle-4 {
+        @extend %circle;
+        background-color: #7874cf;
+      }
+    }
+  }
+
+  .event {
+    @include justify-align(flex-start);
+
+    &_logo {
+      margin-left: 21px;
+    }
+
+    &_description {
+      margin-left: 11px;
+      margin-top: 37px;
+      font-size: 12px;
+    }
+
+    &_time-ago {
+      margin-left: 11px;
+      margin-top: 18px;
+      font-size: 12px;
+    }
+  }  
+}

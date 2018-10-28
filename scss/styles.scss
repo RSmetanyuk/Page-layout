@@ -7,6 +7,37 @@
   align-items: $align-items;
 }
 
+.Book-Store {
+  height: 1053px;
+  width: fit-content;
+  margin: auto;
+  font-family: Proxima Nova;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #78829d;
+  background-color: #ffffff;
+  padding: 11px 33px 52px 36px;
+}
+
+.app {  
+  flex: 1;
+  height: 900px;
+  @media screen and (min-width: 1389px) {
+    width: 1320px;
+  }
+
+  @import 'scss/app-header';
+
+  .app-body {
+    @include justify-align(flex-start); 
+    
+    @import 'scss/left-sidebar';
+  }
+}
+
 .in-centered {
   display: flex;
   justify-content: center;
@@ -30,128 +61,17 @@
   flex: 1;
 }
 
-.active {
-  background-color: #15a4fa;
-}
+
 
 .active2 {
   background-color: #97b3ce;
   border-radius: 9.5px;
 }
 
-a {
-  color: 78829d;
-}
 
-.active a, .active2 a {
-  color: #ffffff; 
-}
 
-body {
-  font-family: Proxima Nova;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #78829d;
-  font-size: 13px;
-}
 
-.Book-Store { 
-  height: 1053px;
-  background-color: #ffffff;
-  margin: auto;
-  padding: 10px 20px;
 
-}
-
-@import 'scss/app-header';
-
-.app {  
-  height: 900px;
-  background-color: #ffffff;
-}
-
-.sidebar {
-  width: 200px;
-  height: 900px;
-  background-color: #1f2637;
-}
-
-.add-btn-container {
-  width: 200px;
-  height: 120px;
-}
-
-.add-btn {
-  width: 160px;
-  height: 44px;
-  border-radius: 4px;
-  background-color: #f2795a;
-  margin-bottom: 6px;
-  border: none;
-}
-
-.add-btn img {
-  margin-right: 19px;
-}
-
-.Add-a-Book {
-  width: 86px;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.divider {
-  width: 200px;
-  height: 6px;
-  background-color: #181e2c;
-  border-top: 1px solid #141824;
-  border-bottom: 1px solid #78829d2c;
-}
-
-.left-menue li {
-  height: 38px;
-}
-
-.left-menue li img {
-  margin-right: 12px;
-}
-
-.left-menue li:last-of-type {
-  margin-bottom: 10px;
-}
-
-.categories {
-  height: 181px;
-  margin-top: 29px;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-}
-
-.categories li .circle {
-  margin-right: 15px;
-}
-
-.event_description {
-  margin-left: 11px;
-  margin-top: 37px;
-  font-size: 12px;
-}
-
-.event_date {
-  margin-left: 11px;
-  margin-top: 18px;
-  font-size: 12px;
-}
 
 .app-main {
   flex: 1;
@@ -267,7 +187,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-   
+  /* 
   @media screen and (min-width: 840px) {
     .app__header-circles-container {
       width: 349px;
@@ -298,3 +218,4 @@ body {
     }
      
   }
+  */

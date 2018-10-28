@@ -1,142 +1,136 @@
 <head>
-    <meta charset="utf-8">
-    <title>Page layout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Page layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="stylesheet" type="text/css" href="fonts/fonts.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" type="text/css" href="fonts/fonts.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
     
-    <div class="Book-Store">
+  <div class="Book-Store">
         
-        <div class="app">
+    <div class="app">
 
-        <header class="app-header">
-                <div class="circles-container">
-                    <a href="#"><div class="circle circle--red"></div></a>
-                    <a href="#"><div class="circle circle--yellow"></div></a>
-                    <a href="#"><div class="circle circle--green"></div></a>
-                </div>
+      <header class="app-header">
+        <div class="circles-container">
+          <a href="#"><div class="circle circle--red"></div></a>
+          <a href="#"><div class="circle circle--yellow"></div></a>
+          <a href="#"><div class="circle circle--green"></div></a>
+        </div>
                 
-                <div class="app__header-name flex-1 in-centered">
-                        <img src="img/book-logo.png">
-                        <a href="#">MyBookApp</a>
-                </div>               
+        <div class="center-name-container">
+          <img class="center-name-container__name-logo" src="img/book-logo.png">
+          <a class="center-name-container__name" href="#">MyBookApp</a>
+        </div>               
                 
-                <div class="Help-Center-Our-Support in-centered">
-                    <a href="#">Help Center</a>
-                    <div class="small-circle"></div>
-                    <a href="#">Our Support</a>
-                </div>
-
-                <div class="user-online in-centered">
-                    <img id="avatar" src="img/avatar-01.png">
-                    <a href="#">John Doe</a>
-                    <img src="img/ok.png">
-                </div>
-                
-        </header>        
-        
-        <main class="app in-centered">
-            
-            <div class="sidebar">
-
-                        <div class="add-btn-container in-centered">
-                            <a href="#" class="add-btn in-centered">
-                                <img src="img/plus.png">
-                                <span class="Add-a-Book">ADD A BOOK</span>
-                            </a>              
-                        </div>                           
-                        
-                        <div class="divider"></div>
-
-                        <ul class="left-menue">
-                            <li class="in-left"><img src="img/book-logo.png"><a href="#">Now Reading</a></li>
-                            <li class="in-left active"><img src="img/earth-logo.png"><a>Browse</a></li>
-                            <li class="in-left"><img src="img/buy-logo.png"><a href="#">Bay Books</a></li>
-                            <li class="in-left"><img src="img/fav-logo.png"><a href="#">Favourite Books</a></li>
-                            <li class="in-left"><img src="img/list-logo.png"><a href="#">Wishlist</a></li>
-                            <li class="in-left"><img src="img/history-logo.png"><a href="#">History</a></li>
-                        </ul>
-
-                        <div class="divider"></div>
-
-                        <ul class="categories">
-                            <li class="in-left"><div class="circle" style="background-color: #e64c66"></div><a href="#">Must Read Titles</a></li>
-                            <li class="in-left"><div class="circle" style="background-color: #ffab00"></div><a href="#">Best Of List</a></li>
-                            <li class="in-left"><div class="circle" style="background-color: #00bfdd"></div><a href="#">Classic Novel</a></li>
-                            <li class="in-left"><div class="circle" style="background-color: #7874cf"></div><a href="#">Non Fiction</a></li>
-                        </ul>
-
-                        <div class="divider"></div>
-
-                        <div class="event in-left">
-                            <div>
-                                <img src="img/clock.png">
-                            </div>
-
-                            <div>
-                                <p class="event_description">You added <b>Fight Club</b> by <b>Chuck Palahniuk</b> to your <b>Must Read Title</b></p>
-                                <p class="event_date">24 minutes ago</p>
-                            </div>
-                        </div>
-
-            </div>
-    
-            <div class="app-main">
-                
-                <div class="top-panel in-left">
-                    <h2>Browse Available Books</h2>
-                </div>  
-                
-                <div class="filter in-left">      
-                    <ul class="filter_buttons in-centered">
-                        <li class="active2"><a>All Books</a></li>
-                        <li class=""><a href="#">Most Resent</a></li>
-                        <li class=""><a href="#">Most Popular</a></li>
-                        <li class=""><a href="#">Free Books</a></li>
-                    </ul>
-                    <div class="flex-1 in-right">
-                        <div class="search in-right">
-                            <input class="search_input" placeholder="Enter Keywords">
-                            <a href="#"><img class="search_button" src="img/search.png"></a>
-                        </div>                        
-                    </div>
-                    
-                </div>
-
-                <div class="content-window">                 
-                
-                </div>
-
-            </div>
-
-        </main>
-        
-        <footer class="app-footer">
-            
-            <div class="Email-mask">
-                <a href="#"><img src="img/question.png"></a>                
-            </div>
-
-            <div class="settings-mask">
-                <a href="#"><img src="img/setting.png"></a>                
-            </div>
-
-        </footer>       
-
-
+        <div class="Help-Center-Our-Support">
+          <a href="#">Help Center</a>
+          <div class="Help-Center-Our-Support__small-circle"></div>
+          <a href="#">Our Support</a>
         </div>
 
+        <div class="user-online">
+          <img class="user-online__avatar" src="img/avatar-01.png">
+          <a class="user-online__name"href="#">John Doe</a>
+          <img src="img/ok.png">
+        </div>
+                
+      </header>        
+        
+      <main class="app-body">
+                
+        <div class="sidebar">
 
-   
+          <div class="btn-container">
+            <a class="add-btn" href="#">
+              <img class="add-btn__img" src="img/plus.png">
+              <span class="add-btn__name">ADD A BOOK</span>
+            </a>              
+          </div>                           
+                            
+          <div class="divider"></div>
 
+          <ul class="menue">
+            <li class="menue__item"><img src="img/book-logo.png"><a class="menue__item-name" href="#">Now Reading</a></li>
+            <li class="menue__item menue__item--active"><img src="img/earth-logo.png"><a class="menue__item-name">Browse</a></li>
+            <li class="menue__item"><img src="img/buy-logo.png"><a class="menue__item-name" href="#">Bay Books</a></li>
+            <li class="menue__item"><img src="img/fav-logo.png"><a class="menue__item-name" href="#">Favourite Books</a></li>
+            <li class="menue__item"><img src="img/list-logo.png"><a class="menue__item-name" href="#">Wishlist</a></li>
+            <li class="menue__item"><img src="img/history-logo.png"><a class="menue__item-name" href="#">History</a></li>
+          </ul>
 
+          <div class="divider"></div>
 
+          <ul class="categories">
+            <li class="categories__item"><span class="circle-1"></span><a href="#">Must Read Titles</a></li>
+            <li class="categories__item"><div class="circle-2"></div><a href="#">Best Of List</a></li>
+            <li class="categories__item"><div class="circle-3"></div><a href="#">Classic Novel</a></li>
+            <li class="categories__item"><div class="circle-4"></div><a href="#">Non Fiction</a></li>
+          </ul>
 
+          <div class="divider"></div>
+
+          <div class="event">
+            
+            <div>
+              <img class="event_logo" src="img/clock.png">
+            </div>
+
+            <div>
+              <p class="event_description">You added <b>Fight Club</b> by <b>Chuck Palahniuk</b> to your <b>Must Read Title</b></p>
+              <p class="event_time-ago">24 minutes ago</p>
+            </div>
+
+          </div>
+
+        </div>
+        
+                <div class="app-main">
+                    
+                    <div class="top-panel in-left">
+                        <h2>Browse Available Books</h2>
+                    </div>  
+                    
+                    <div class="filter in-left">      
+                        <ul class="filter_buttons in-centered">
+                            <li class="active2"><a>All Books</a></li>
+                            <li class=""><a href="#">Most Resent</a></li>
+                            <li class=""><a href="#">Most Popular</a></li>
+                            <li class=""><a href="#">Free Books</a></li>
+                        </ul>
+                        <div class="flex-1 in-right">
+                            <div class="search in-right">
+                                <input class="search_input" placeholder="Enter Keywords">
+                                <a href="#"><img class="search_button" src="img/search.png"></a>
+                            </div>                        
+                        </div>
+                        
+                    </div>
+
+                    <div class="content-window">                 
+                    
+                    </div>
+
+                </div>
+
+            </main>
+        
+            <footer class="app-footer">
+                
+                <div class="Email-mask">
+                    <a href="#"><img src="img/question.png"></a>                
+                </div>
+
+                <div class="settings-mask">
+                    <a href="#"><img src="img/setting.png"></a>                
+                </div>
+
+            </footer>       
+
+        </div>
 
     </div>
 
