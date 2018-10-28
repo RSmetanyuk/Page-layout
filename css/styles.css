@@ -241,105 +241,45 @@ a {
                 outline: none; }
             .app .app-body .app-main .filter .search-outer-container .search__button {
               margin-right: 18px; }
-
-.in-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.in-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-
-.in-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
-.flex-1 {
-  flex: 1; }
-
-.content-window {
-  padding: 10px 1px 1px 10px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap; }
-
-.book {
-  margin: 15px 10px; }
-
-.book__logo {
-  border-radius: 5px; }
-
-.book__title {
-  font-size: 16px;
-  color: #444c63;
-  margin-top: 17px;
-  margin-left: 1px; }
-
-.book__author {
-  font-size: 12px;
-  color: #6f7d95;
-  margin-top: 12px; }
-
-.book__rating {
-  margin-top: 11px; }
-
-.app-footer {
-  height: 45px;
-  background-color: #181e2c;
-  border-radius: 0px 0px 5px 5px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
-.Email-mask {
-  width: 55px;
-  height: 45px;
-  background-color: #1f2637;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.settings-mask {
-  width: 55px;
-  height: 45px;
-  border-radius: 0px 0px 5px 0px;
-  background-color: #15a4fa;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-/* 
-  @media screen and (min-width: 840px) {
-    .app__header-circles-container {
-      width: 349px;
-    }
-  }
-  
-  @media screen and (min-width: 840px) {
-    .app__header-circles-container {
-      width: 349px;
-    }
-  }
-
-  @media screen and (min-width: 1389px) {
-    .Book-Store {
-      width: 1360px;
-    }
-
-    .app__header {
-      width: 1320px;
-    }
-
-    .app {
-      width: 1320px;
-    }
-
-    .app-footer {
-      width: 1320px;
-    }
-     
-  }
-  */
+      .app .app-body .app-main .content-window {
+        padding: 10px 1px 1px 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        .app .app-body .app-main .content-window .book {
+          margin: 15px 10px; }
+          .app .app-body .app-main .content-window .book__logo {
+            border-radius: 5px; }
+          .app .app-body .app-main .content-window .book__title {
+            font-size: 16px;
+            color: #444c63;
+            margin-top: 17px;
+            margin-left: 1px; }
+          .app .app-body .app-main .content-window .book__author {
+            font-size: 12px;
+            color: #6f7d95;
+            margin-top: 12px; }
+          .app .app-body .app-main .content-window .book__rating {
+            margin-top: 11px; }
+  .app .app-footer {
+    height: 45px;
+    background-color: #181e2c;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .app .app-footer .Email-mask {
+      width: 55px;
+      height: 45px;
+      background-color: #1f2637;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .app .app-footer .settings-mask {
+      width: 55px;
+      height: 45px;
+      border-radius: 0px 0px 5px 0px;
+      background-color: #15a4fa;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
