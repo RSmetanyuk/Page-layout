@@ -1,7 +1,10 @@
 .sidebar {
   width: 200px;
-  height: 900px;
+  height: 100%;
   background-color: #1f2637;
+  overflow-X: hidden;
+  overflow-y: auto;
+  outline: none;
 
   .btn-container {
     @include justify-align(center);
